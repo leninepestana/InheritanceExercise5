@@ -2,9 +2,7 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -21,8 +19,8 @@ public class ProductProgram {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
-		List<Product> products = new ArrayList<>();
-		
+		Product products = new Product();
+				
 		System.out.print("Enter the number of products: ");
 		int n = sc.nextInt();
 		
@@ -35,30 +33,31 @@ public class ProductProgram {
 			String name = sc.nextLine();
 			System.out.print("Price: ");
 			double price = sc.nextDouble();
+						
 			if(Character.toLowerCase(ch) == 'u') {
 				System.out.print("Manufacture date (DD/MM/YYYY): ");
 				Date manufactureDate = sdf.parse(sc.next());
 				Product prod = new UsedProduct(name, price, manufactureDate);
-				products.add(prod);
+				products.addProduct(prod);
 			}
 			else if(Character.toLowerCase(ch) == 'i'){
 				System.out.print("Custom fee: ");
 				double customFee = sc.nextDouble();
 				Product prod = new ImportedProduct(name, price, customFee);
-				products.add(prod);
+				products.addProduct(prod);
 			}
 			else {
 				Product prod = new Product(name, price);
-				products.add(prod);
+				products.addProduct(prod);
 			}
+		
 		}
 		
 		System.out.println();
-		System.out.println("PRICE TAGS:");
-		for(Product p : products) {
-			System.out.println(p.priceTag());
-		}
 		
+		System.out.println(products.priceTag());
+
+	
 		sc.close();
 	}
 
