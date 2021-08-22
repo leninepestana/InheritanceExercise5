@@ -26,3 +26,5 @@ Drone (used) $ 500.00 (Manufacture date: 15/03/2017)
 
 # InheritanceExercise5 V2 on branch testing
 
+In this version we have created the Product list diretly on the
+Product class. From the main class we call the object products to return the products list
