@@ -1,6 +1,11 @@
 # InheritanceExercise5
 Working with Polymorphism
 
+Make a program to read data from N products (N supplied by the user). At end, show the price tag of each product in the
+same order in which they were typed.\
+Every product has a name and price. Products imported have a customs fee, and Used products have a date of manufacture.
+These specific data must be added to the price tag as per example (see below). For products imported, the tax and customs must be added to the final price of the product.
+
 `The program must work like this:`
 
 Enter the number of products: 3\
@@ -23,8 +28,3 @@ PRICE TAGS:\
 Macbook $ 1020.00 (Customs fee: $ 20.00)\
 Smartphone $ 400.00\
 Drone (used) $ 500.00 (Manufacture date: 15/03/2017)
-
-# InheritanceExercise5 V2 on branch testing
-
-In this version we have created the Product list diretly on the
-Product class. From the main class we call the object products to return the products list
