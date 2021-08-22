@@ -6,23 +6,23 @@ Working with Polymorphism
 Enter the number of products: 3\
 Product #1 data:\
 Common, used or imported (c/u/i)? i\
-Name: Tablet\
-Price: 260.00\
+Name: Macbook\
+Price: 1000.00\
 Customs fee: 20.00\
 Product #2 data:\
 Common, used or imported (c/u/i)? c\
-Name: Notebook\
-Price: 1100.00\
+Name: Smartphone\
+Price: 400.00\
 Product #3 data:\
 Common, used or imported (c/u/i)? u\
-Name: Iphone\
-Price: 400.00\
-Manufacture date (DD/MM/YYYY): 15/03/2017
+Name: Drone\
+Price: 500.00\
+Manufacture date (DD/MM/YYYY): 10/05/2019
 
 PRICE TAGS:\
-Tablet $ 280.00 (Customs fee: $ 20.00)\
-Notebook $ 1100.00\
-Iphone (used) $ 400.00 (Manufacture date: 15/03/2017)
+Macbook $ 1020.00 (Customs fee: $ 20.00)\
+Smartphone $ 400.00\
+Drone (used) $ 500.00 (Manufacture date: 15/03/2017)
 
 # InheritanceExercise5 V2 on branch testing
 
